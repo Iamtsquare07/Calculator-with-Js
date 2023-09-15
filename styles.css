@@ -1,0 +1,107 @@
+body {
+  background-color: #000014;
+  width: 100vw;
+  height: 100vh;
+  color:white;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 32, 43);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 30px;
+    margin-top:50px;
+    box-shadow: 1px 1px 5px 1px #3048b1;
+  }
+
+  .calculator:hover {
+    box-shadow: 1px 1px 15px 2px #3048b1;
+  }
+  
+  .screen {
+    display: inline-block;
+    overflow: hidden; /* Hide any overflowing content */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    text-overflow: ellipsis;
+    width: 300px;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 36px;
+    color: #333;
+    text-align: right;
+    padding-top: 25%;
+    white-space: nowrap;
+  }
+
+  .current-num {
+    margin-bottom: -5px;
+  }
+
+  
+  .small-text {
+    font-size: 1vw; /* Set the scaling origin to the left (default is center) */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 50%;
+  }
+  
+  button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0px 1px 5px 1px #3048b1;
+  }
+  
+  button:hover {
+    background-color: #dee2fc;
+  }
+  
+  button.clear-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.clear-button:hover {
+    background-color: #dc143c;
+  }
+  
+  button.operator-button {
+    background-color: #ff8800;
+    color: white;
+  }
+  
+  button.operator-button:hover {
+    background-color: #ffc400;
+  }
+  
+  button.equal-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.equal-button:hover {
+    background-color: #43a047;
+  }
+  
+  
