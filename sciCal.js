@@ -54,7 +54,6 @@ function clear() {
 
 function deleteLastDigit() {
     if (currentNum.length > 0) {
-        // Remove the last character from the current number
         currentNum = currentNum.slice(0, -1);
         updateDisplay();
     }
@@ -62,7 +61,7 @@ function deleteLastDigit() {
 
 function appendNumber(num) {
     if (result !== null) {
-        clear(); // Clear everything if there's a previous result
+        clear();
     }
 
     if (currentNum === '0') {
@@ -118,7 +117,6 @@ function performOperation() {
     currentNum = result.toString();
     previousNum = null;
     operation = null;
-    // updateDisplay();
 }
 
 function calculate() {
