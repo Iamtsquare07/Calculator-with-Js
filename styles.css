@@ -14,6 +14,7 @@ h1 {
     margin-bottom: 20px;
     color: rgba(255, 217, 0, 0.61);
     font-family: 'Croissant One', cursive;
+    font-size: 5vw;
 }
 
 .calculator {
@@ -112,4 +113,10 @@ button.equal-button {
 
 button.equal-button:hover {
     background-color: #43a047;
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
 }
